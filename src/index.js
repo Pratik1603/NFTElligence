@@ -5,11 +5,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AINFTProvider } from './context/AINftContext';
+import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AINFTProvider>
     <React.StrictMode>
+      <BrowserRouter>
       <App />
+      </BrowserRouter>
     </React.StrictMode>
   </AINFTProvider>
 

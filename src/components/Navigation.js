@@ -4,9 +4,10 @@ import { useContext,useEffect } from 'react';
 import { AINFTContext } from '../context/AINftContext';
 import img from "../assets/logo.png";
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from 'react-router-dom';
 const Navigation = () => {
     const {currentUser,connectWallet}=useContext(AINFTContext);
-    
+    const navigate=useNavigate();
     const [state,setState]=React.useState(false);
    
 
@@ -46,8 +47,8 @@ const Navigation = () => {
                
                  {navigation.map((item,idx)=>{
                      return(
-                         <li key={idx} className="text-white hover:text-[#4b37b4] hover:font-bold">
-                             <a style={{textDecoration:"none"}} href={item.path} className="block">{item.title}</a>
+                         <li key={idx} className="text-white hover:text-[#4b37b4] hover:font-bold" onClick={()=>navigate(item.path)}>
+                             <a style={{textDecoration:"none"}}  className="block">{item.title}</a>
                          </li>
                      );
                  })}

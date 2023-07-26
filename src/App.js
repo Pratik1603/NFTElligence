@@ -20,13 +20,13 @@ function App() {
   return (
     <div className='bg-gradient-to-br from-[#24022b] from-20% to-[#2d2597] '>
       <Navigation />
-      <BrowserRouter>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mint" element={<MintNFT />} />
           <Route path="/yourNFT" element={<YourNFT />} />
         </Routes>
-      </BrowserRouter>
+      
       <Footer/>
       
 
