@@ -48,7 +48,7 @@ const Navigation = () => {
                  {navigation.map((item,idx)=>{
                      return(
                          <li key={idx} className="text-white hover:text-[#4b37b4] hover:font-bold" onClick={()=>navigate(item.path)}>
-                             <a style={{textDecoration:"none"}}  className="block">{item.title}</a>
+                             <div style={{textDecoration:"none"}}  className="block">{item.title}</div>
                          </li>
                      );
                  })}
