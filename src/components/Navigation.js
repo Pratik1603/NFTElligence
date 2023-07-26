@@ -13,8 +13,8 @@ const Navigation = () => {
 
     const navigation=[
         {title:"Home",path:"/"},
-        {title:"Mint NFT",path:"/mint"},
-        {title:"Your NFT",path:"/yourNFT"},
+        {title:"Mint NFT",path:"mint"},
+        {title:"Your NFT",path:"yourNFT"},
         
     ];
     
